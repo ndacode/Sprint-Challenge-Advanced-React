@@ -1,26 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { render} from '@testing-library/react';
 import App from './App';
 import PlayerCard from './components/PlayerCard';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  render(<App />);
 });
 
-
-
-test ("Has darkmode toggle", ()=> {
-  const {getByText} = (<App/>);
+test ("Displays Player Card", ()=> {
+  render (<PlayerCard/>);
 })
 
-test ( "Displays Player Card", ()=> {
-  const {getAllByDisplayValue} = (<PlayerCard/>);
+
+test ("Displays Player Card", ()=> {
+  const container = render (<PlayerCard/>);
+  container.getByText(/PlayerCard/i);
+  // getByText(/PlayerCard/i);
 })
+
+test ( "Has Darkmode", ()=> {
+  const container = render (<App/>);
+ container.getByText("Dark Mode");
+});
+
+test ( "Has Darkmode", ()=> {
+  const container = render (<App/>);
+  container.getByText(/Dark Mode/i);
+});
 
 test ( "Ranks Only Up to 100", ()=> {
-  const {getByText} = ('100');
+  const container = render(<App/>);
+  container.getByText("101");
 })
 

@@ -6,16 +6,6 @@
   width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #09d3ac;
@@ -62,8 +52,9 @@
 
 .dark-mode {
   color: lightgreen;
-  background-color: #313843;
+  background-image: url('./components/Night.png')
 }
+
 
 .div {
   margin: 0 auto;
@@ -79,13 +70,19 @@
   
 }
 
+.rankbox {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cards {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   background: orange;
   border-radius: 20px;
-  width: 250px;
+  width: 300px;
   padding: 50px;
   box-shadow: 0px 2px 15px -8px white;
   color: white;

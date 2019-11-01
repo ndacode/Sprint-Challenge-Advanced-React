@@ -31,8 +31,9 @@ class App extends React.Component {
     render() {
       return(
       <>
+      <div className='container'>
         <Navbar/>
-        <div>
+        <div className='rankbox'>
         {this.state.player.map(player =>  <PlayerCard
           key={player.id}
           rank={`${player.id + 1}`}
@@ -40,6 +41,7 @@ class App extends React.Component {
           country={player.country}
           />
       )}
+      </div>
       </div>
     </>
       )
