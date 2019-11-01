@@ -38,6 +38,7 @@
   position: absolute;
   transition: 0.2s;
   width: 40px;
+  font-size: 10px;
 }
 
 .toggled {
@@ -64,6 +65,12 @@
   background-color: #313843;
 }
 
+.div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .players {
   display: flex;
   flex-direction: row;
@@ -84,12 +91,22 @@
   color: white;
 }
 
+h2 {
+  font-size: 120px;
+  margin: 0 20px;
+}
+
 h1 {
-  font-size: 80px;
+  font-size: 50px;
   margin: 0 20px;
 }
 
 p {
   font-size: 20px;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 10px;
   margin: 0 20px;
 }
