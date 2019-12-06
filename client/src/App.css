@@ -1,33 +1,126 @@
+
+
 .App {
+  font-family: sans-serif;
   text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.App-link {
+  color: #09d3ac;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dark-mode__toggle {
+  background: white;
+  border-radius: 50px;
+  border: 1px solid orchid;
+  height: 40px;
+  position: relative;
+  width: 80px;
+}
+
+.body {
+  background-image: url('./components/Day.png');
+}
+
+.toggle {
+  background: orange;
+  border-radius: 50px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 40px;
+  font-size: 10px;
+}
+
+.toggled {
+  left: 40px;
+  background: lightgreen;
+}
+
+.navbar {
+  align-items: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  padding: 3% 3%;
+  margin: 50px 50px;
+  width: 80%;
+  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+}
+
+.dark-mode {
+  color: lightgreen;
+  background-image: url('./components/Night.png')
+}
+
+
+.div {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.players {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  width: 100%;
+  
+}
+
+.rankbox {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background: plum;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 10px 2px 15px 8px white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 120px;
+  margin: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 100px;
+  margin: 0 20px;
+  color: white;
+  text-shadow: 2px 2px 2px orangered;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 10px;
+  margin: 0 20px;
+  color: white;
+}
+
+.bg {
+  display: flex;
+  justify-content: center;
+  margin: 50px ;
+  background-color: white;
+  padding: 20px ;
+  border-radius: 5px;
 }
