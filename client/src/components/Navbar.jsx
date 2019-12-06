@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useDarkmode from './hooks/useDarkmode';
+import Example from './Rechart';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkmode(false);
@@ -8,8 +9,11 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
   return (
+  <div >
+    
     <nav className="navbar">
       <h1>Womens World Cup Rankings</h1>
+      
       <div className="dark-mode__toggle"> 
         <div
           onClick={toggleMode}
@@ -18,6 +22,10 @@ const Navbar = () => {
       </div>
       <h4>Dark Mode</h4>
     </nav>
+    <div className="bg">
+      <Example />
+      </div>
+      </div>
   );
 };
 

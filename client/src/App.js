@@ -5,6 +5,7 @@ import PlayerCard from './components/PlayerCard';
 import Navbar from './components/Navbar';
 
 
+
 class App extends React.Component {
 
     constructor (){
@@ -33,6 +34,7 @@ class App extends React.Component {
       <>
       <div className='container'>
         <Navbar/>
+       
         <div className='rankbox'>
         {this.state.player.map(player =>  <PlayerCard
           key={player.id}
@@ -42,7 +44,9 @@ class App extends React.Component {
           />
       )}
       </div>
+      
       </div>
+  
     </>
       )
     }
